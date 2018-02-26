@@ -14,12 +14,15 @@ CURRENT_IP_ADDRESS=$(curl -s ipinfo.io/ip)
 PUBLIC_IP_ADDRESS=$(cat ${PUBLIC_IP_ADDRESS_FILE})
 
 echo $PUBLIC_IP_ADDRESS $CURRENT_IP_ADDRESS
+STATUS=0
 if [[ ${CURRENT_IP_ADDRESS} == ${PUBLIC_IP_ADDRESS} ]]; then
     logInfo "IP address did not change"
 else
     logInfo "IP address changed!!"
     echo ${CURRENT_IP_ADDRESS} >> ${PUBLIC_IP_ADDRESS_FILE}
+    STATUS=1
 fi
 
 logInfo "FINISHED checkConnection.sh"
+exit ${STATUS}
 #END
