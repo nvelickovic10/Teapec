@@ -5,8 +5,6 @@
 
 logInfo "STARTING checkConnection.sh"
 
-cd "$(dirname "$0")"
-
 PUBLIC_IP_ADDRESS_FILE=./PUBLIC_IP_ADDRESS
 
 CURRENT_IP_ADDRESS=$(curl -s ipinfo.io/ip)

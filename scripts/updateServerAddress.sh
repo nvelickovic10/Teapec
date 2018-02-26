@@ -5,8 +5,6 @@
 
 logInfo "STARTED updateServerAddress.sh"
 
-cd "$(dirname "$0")"
-
 PUBLIC_IP_ADDRESS_FILE=./PUBLIC_IP_ADDRESS
 PUBLIC_IP_ADDRESS=$(cat ${PUBLIC_IP_ADDRESS_FILE})
 
