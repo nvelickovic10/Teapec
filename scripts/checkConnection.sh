@@ -7,6 +7,6 @@ if [[ ${CURRENT_IP_ADDRESS} == ${PUBLIC_IP_ADDRESS} ]]; then
     echo "SAME"
 else
     echo "DIFFERENT"
-    export PUBLIC_IP_ADDRESS=${CURRENT_IP_ADDRESS}
+    PUBLIC_IP_ADDRESS=${CURRENT_IP_ADDRESS}
 fi
 #END
