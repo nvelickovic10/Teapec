@@ -1,0 +1,7 @@
+#!/bin/bash
+
+echo $PUBLIC_IP_ADDRESS
+
+CURRENT_IP_ADDRESS=$(curl ipinfo.io/ip)
+
+echo $PUBLIC_IP_ADDRESS $CURRENT_IP_ADDRESS
