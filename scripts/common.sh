@@ -1,7 +1,5 @@
 #!/bin/bash
 
-cd "$(dirname "$0")"
-
 function logInfo {
     echo "INFO: $1"
 }

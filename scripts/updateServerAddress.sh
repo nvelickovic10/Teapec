@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Change dir to script dir
+cd "$(dirname "$0")"
+
 # Include common functions
 . common.sh
 
