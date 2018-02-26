@@ -1,9 +1,11 @@
+const serverAddress = 'http://$PUBLIC_IP_ADDRESS:9000'
+
 function turnOn() {
-  fetch('http://89.216.155.62:9000/on')
+  fetch(serverAddress + '/on')
 }
 
 function turnOff() {
-  fetch('http://89.216.155.62:9000/off')
+  fetch(serverAddress + '/off')
 }
 
 const Page = ({ stars }) =>
