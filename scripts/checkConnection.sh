@@ -20,7 +20,7 @@ if [[ ${CURRENT_IP_ADDRESS} == ${PUBLIC_IP_ADDRESS} ]]; then
 else
     logInfo "IP address changed!!"
     AA=${CURRENT_IP_ADDRESS}
-    echo ${CURRENT_IP_ADDRESS} >> ${PUBLIC_IP_ADDRESS_FILE}
+    echo ${CURRENT_IP_ADDRESS} > ${PUBLIC_IP_ADDRESS_FILE}
     STATUS=1
 fi
 
