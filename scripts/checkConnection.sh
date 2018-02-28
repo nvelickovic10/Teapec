@@ -8,7 +8,7 @@ cd "$(dirname "$0")"
 
 logInfo "STARTING checkConnection.sh"
 
-PUBLIC_IP_ADDRESS_FILE=./PUBLIC_IP_ADDRESS
+PUBLIC_IP_ADDRESS_FILE=./PUBLIC_IP_ADDRESS.txt
 
 CURRENT_IP_ADDRESS=$(curl -s ipinfo.io/ip)
 PUBLIC_IP_ADDRESS=$(cat ${PUBLIC_IP_ADDRESS_FILE})
